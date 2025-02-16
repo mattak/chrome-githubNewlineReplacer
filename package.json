@@ -4,6 +4,6 @@
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "build": "tsc && cp src/manifest.json dist/"
+    "build": "tsc && cp src/manifest.json dist/ && cp -r src/icons dist/"
   }
 }
