@@ -1,0 +1,13 @@
+{
+  "manifest_version": 3,
+  "name": "Cursor Rules",
+  "version": "1.0.0",
+  "description": "Customize cursor styles per website",
+  "permissions": ["storage"],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "action": {
+    "default_popup": "popup.html"
+  }
+} 

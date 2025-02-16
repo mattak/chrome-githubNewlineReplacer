@@ -1,5 +1,5 @@
 # ビルド出力
-dist/
+/dist
 build/
 
 # 依存関係
