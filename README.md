@@ -49,7 +49,7 @@ npm run build
 
 ## License
 
-MIT
+This project is licensed under the [MIT License](LICENSE.md).
 
 ## Privacy Policy
 
