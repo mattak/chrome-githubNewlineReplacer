@@ -1,9 +1,14 @@
 {
+  "name": "chrome-github-newline-replacer",
+  "description": "Replace \\n to actual newlines in textareas on github",
+  "author": "mattak",
+  "license": "MIT",
   "devDependencies": {
     "@types/chrome": "^0.0.304",
     "typescript": "^5.7.3"
   },
   "scripts": {
-    "build": "tsc && cp src/manifest.json dist/ && cp -r src/icons dist/"
+    "build": "tsc && cp src/manifest.json dist/ && cp -r src/icons dist/",
+    "release": "rm -rf dist/ && tsc && cp src/manifest.json dist/ && cp -r src/icons dist/ && mv dist chrome-githubNewlineReplacer && zip -r chrome-githubNewlineReplacer-v${version}.zip chrome-githubNewlineReplacer/ && rm -rf chrome-githubNewlineReplacer"
   }
 }
