@@ -1,25 +1,34 @@
 {
   "manifest_version": 3,
-  "name": "Cursor Rules",
+  "name": "Newline Converter",
   "version": "1.0.0",
-  "description": "Customize cursor styles per website",
+  "description": "Convert \\n to actual newlines in textareas",
   "icons": {
     "16": "icons/icon16.png",
     "32": "icons/icon32.png",
     "48": "icons/icon48.png",
     "128": "icons/icon128.png"
   },
-  "permissions": ["storage"],
-  "background": {
-    "service_worker": "background.js"
-  },
+  "permissions": [
+    "storage",
+    "commands",
+    "scripting"
+  ],
+  "host_permissions": [
+    "https://github.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["https://github.com/*"],
+      "js": ["content.js"]
+    }
+  ],
   "action": {
     "default_icon": {
       "16": "icons/icon16.png",
       "32": "icons/icon32.png",
       "48": "icons/icon48.png",
       "128": "icons/icon128.png"
-    },
-    "default_popup": "popup.html"
+    }
   }
 } 
