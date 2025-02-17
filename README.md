@@ -1,13 +1,10 @@
-# Cursor Rules
+# chrome-githubNewlineReplacer
 
-A Chrome extension for managing custom cursor rules.
+A Chrome extension for replace \\n to actual newlines in textareas on github.
 
 ## Features
 
-- 🎯 Customize cursor styles per website
-- ⚡ Real-time cursor updates
-- 🔒 Local settings storage
-- 🌐 Works on all websites
+- 🎯 Replace \\n to actual newlines in textareas on github.
 
 ## Development Setup
 
@@ -18,9 +15,6 @@ A Chrome extension for managing custom cursor rules.
 ### Installation
 
 ```
-# Clone the repository
-git clone [repository-url]
-
 # Install dependencies
 npm install
 ```
@@ -28,9 +22,6 @@ npm install
 ### Development Commands
 
 ```
-# Start development server
-npm run dev
-
 # Build the extension
 npm run build
 ```
